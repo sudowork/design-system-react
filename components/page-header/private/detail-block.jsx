@@ -98,7 +98,7 @@ class DetailBlock extends Component {
 		const renderContent = () => {
 			const type = typeof content;
 			if (type === 'string') {
-				const labelClasses = classnames('slds-text-body--regular', {
+				const labelClasses = classnames('slds-text-body_regular', {
 					'slds-truncate': truncate,
 				});
 				return (
@@ -120,7 +120,7 @@ class DetailBlock extends Component {
 		 * Render the content with a tooltip (for content that truncates)
 		 */
 		const renderContentWithTooltip = () => {
-			const labelClasses = classnames('slds-text-body--regular', {
+			const labelClasses = classnames('slds-text-body_regular', {
 				'slds-truncate': truncate,
 			});
 			return (

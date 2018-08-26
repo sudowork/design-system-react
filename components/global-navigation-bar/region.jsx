@@ -66,7 +66,7 @@ const renderTertiary = (dividerClass, className, children) => (
 	<div
 		className={classNames(
 			'slds-context-bar__tertiary',
-			'slds-col--bump-left',
+			'slds-col_bump-left',
 			dividerClass,
 			className
 		)}

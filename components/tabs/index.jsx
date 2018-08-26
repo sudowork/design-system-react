@@ -391,8 +391,8 @@ class Tabs extends React.Component {
 				id={id}
 				className={classNames(
 					{
-						'slds-tabs--default': variant === 'default',
-						'slds-tabs--scoped': variant === 'scoped',
+						'slds-tabs_default': variant === 'default',
+						'slds-tabs_scoped': variant === 'scoped',
 					},
 					className
 				)}

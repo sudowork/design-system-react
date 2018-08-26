@@ -157,7 +157,7 @@ const GlobalNavigationDropdownTrigger = createReactClass({
 			<li
 				aria-haspopup="true"
 				className={classNames(
-					'slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--click',
+					'slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click',
 					{
 						'slds-is-open': isOpen,
 						'slds-is-active': active,
@@ -178,7 +178,7 @@ const GlobalNavigationDropdownTrigger = createReactClass({
 			>
 				{/* eslint-enable jsx-a11y/no-static-element-interactions */}
 				<a className="slds-context-bar__label-action">{label}</a>
-				<div className="slds-context-bar__icon-action slds-p-left--none">
+				<div className="slds-context-bar__icon-action slds-p-left_none">
 					<Button
 						assistiveText={this.props.assistiveText}
 						{...rest}

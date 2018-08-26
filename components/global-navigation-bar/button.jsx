@@ -48,7 +48,7 @@ GlobalNavigationButton.propTypes = {
 
 // ### Default Props
 GlobalNavigationButton.defaultProps = {
-	className: 'slds-context-bar__label-action slds-text-body--regular',
+	className: 'slds-context-bar__label-action slds-text-body_regular',
 	// This is a hack since buttons are not supported by Global Navigation
 	// Bar and have different `font-size` and `line-height` than links or
 	// dropdowns.

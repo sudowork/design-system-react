@@ -28,12 +28,12 @@ chai.use(chaiEnzyme());
 const { Simulate } = TestUtils;
 
 const COMPONENT_CSS_CLASSES = {
-	wrapper: 'slds-tabs--default--wrapper',
-	base: 'slds-tabs--default',
-	nav: 'slds-tabs--default__nav',
-	item: 'slds-tabs--default__item',
-	link: 'slds-tabs--default__link',
-	content: 'slds-tabs--default__content',
+	wrapper: 'slds-tabs_default_wrapper',
+	base: 'slds-tabs_default',
+	nav: 'slds-tabs_default__nav',
+	item: 'slds-tabs_default__item',
+	link: 'slds-tabs_default__link',
+	content: 'slds-tabs_default__content',
 	testClass: 'this-is-a-css-class-name',
 };
 
@@ -77,7 +77,7 @@ const TabsDemoComponent = createReactClass({
 		return (
 			<div
 				className={classNames(
-					'slds-m-top--large',
+					'slds-m-top_large',
 					`${COMPONENT_CSS_CLASSES.wrapper}`
 				)}
 			>
@@ -187,7 +187,7 @@ describe('Tabs', () => {
 			expect(myTabsListItem).to.have.length(1);
 		});
 
-		it('Tab components have proper ID attributes because they inherit the Tabs "id" property and append "-slds-tabs--tab-<index>" to it.', function () {
+		it('Tab components have proper ID attributes because they inherit the Tabs "id" property and append "-slds-tabs_tab-<index>" to it.', function () {
 			this.wrapper
 				.find(`.${COMPONENT_CSS_CLASSES.item}`)
 				.forEach(function (node, index) {
@@ -195,7 +195,7 @@ describe('Tabs', () => {
 				});
 		});
 
-		it('TabPanel components have proper ID attributes because they inherit the Tabs "id" property and append "-slds-tabs--panel-<index>" to it.', function () {
+		it('TabPanel components have proper ID attributes because they inherit the Tabs "id" property and append "-slds-tabs_panel-<index>" to it.', function () {
 			this.wrapper
 				.find(`.${COMPONENT_CSS_CLASSES.panel}`)
 				.forEach(function (node, index) {
@@ -238,7 +238,7 @@ describe('Tabs', () => {
 		);
 		after(unmountComponent);
 
-		it('Tab components have proper "aria-controls" attribute because they inherit Tabs ID property and append "-slds-tabs--panel-<index>" to it.', function () {
+		it('Tab components have proper "aria-controls" attribute because they inherit Tabs ID property and append "-slds-tabs_panel-<index>" to it.', function () {
 			this.wrapper
 				.find(`.${COMPONENT_CSS_CLASSES.item}`)
 				.forEach(function (node, index) {
@@ -249,7 +249,7 @@ describe('Tabs', () => {
 				});
 		});
 
-		it('TabPanel components have proper "aria-labelledby" attribute because they inherit Tabs ID property and append "-slds-tabs--tab-<index>" to it.', function () {
+		it('TabPanel components have proper "aria-labelledby" attribute because they inherit Tabs ID property and append "-slds-tabs_tab-<index>" to it.', function () {
 			this.wrapper
 				.find(`.${COMPONENT_CSS_CLASSES.panel}`)
 				.forEach(function (node, index) {

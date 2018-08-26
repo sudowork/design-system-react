@@ -12,7 +12,7 @@ const Example = createReactClass({
 	render () {
 		return (
 			<IconSettings iconPath="/assets/icons">
-				<ButtonGroup className="slds-p-bottom--medium">
+				<ButtonGroup className="slds-p-bottom_medium">
 					<PopoverTooltip align="bottom" content="Buttonbar Tooltip">
 						<Button label="Refresh" />
 					</PopoverTooltip>
